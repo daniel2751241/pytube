@@ -275,6 +275,7 @@ def get_throttling_function_name(js: str) -> str:
         r'\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])?\([a-z]\)',
         r'\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])\([a-z]\)',
     ]
+    logger.info("TESTING")
     logger.debug('Finding throttling function name')
     for pattern in function_patterns:
         regex = re.compile(pattern)
